@@ -5,9 +5,5 @@ date: 2026-11-05
 ---
 
 Une question, une suggestion ou simplement envie d'échanger ?
-
-Tu peux me contacter par courrier électronique :
-
-[SOON ... Me contacter par email](mailto:)
-
-*Adresse à remplacer par ta véritable adresse avant publication.*
+Pour me contacter, veuillez d'abord prendre contact via : 
+aHR0cHM6Ly93d3cubGlua2VkaW4uY29tL2luL2xpb25lbC1ib3V0YW50Lw== 
