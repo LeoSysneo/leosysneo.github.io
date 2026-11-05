@@ -1,0 +1,15 @@
+
+# Hugo - fichiers générés
+/public/
+/resources/
+
+# Fichier temporaire Hugo
+.hugo_build.lock
+
+# Fichiers système
+.DS_Store
+Thumbs.db
+
+# Éditeurs
+.vscode/
+.idea/

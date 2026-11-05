@@ -1,0 +1,7 @@
+baseURL = 'https://leosysneo.github.io/'
+locale = 'fr-fr'
+title = 'Mon espace personnel'
+enableRobotsTXT = true
+[params]
+description = 'Un espace personnel, des projets et des découvertes.'
+author = 'cqfd'

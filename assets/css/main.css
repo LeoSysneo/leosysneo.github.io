@@ -1,0 +1,397 @@
+
+/* =========================================
+   VARIABLES
+========================================= */
+
+:root {
+    --color-background: #f8f8f6;
+    --color-surface: #ffffff;
+    --color-text: #292929;
+    --color-muted: #777777;
+    --color-border: #e5e5e2;
+    --color-accent: #426b68;
+
+    --content-width: 1100px;
+    --page-padding: 24px;
+}
+
+
+/* =========================================
+   RESET
+========================================= */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont,
+                 "Segoe UI", sans-serif;
+    font-size: 16px;
+    line-height: 1.7;
+    color: var(--color-text);
+    background: var(--color-background);
+}
+
+
+/* =========================================
+   TYPOGRAPHY
+========================================= */
+
+h1,
+h2,
+h3 {
+    line-height: 1.3;
+    font-weight: 600;
+}
+
+h1 {
+    font-size: clamp(2rem, 5vw, 3rem);
+}
+
+h2 {
+    font-size: 1.7rem;
+}
+
+p {
+    margin: 0 0 1.2rem;
+}
+
+a {
+    color: var(--color-accent);
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+a:hover {
+    color: var(--color-text);
+}
+
+
+/* =========================================
+   HEADER
+========================================= */
+
+.site-header {
+    background: var(--color-surface);
+    border-bottom: 1px solid var(--color-border);
+}
+
+.header-inner {
+    max-width: var(--content-width);
+    min-height: 76px;
+    margin: 0 auto;
+    padding: 16px var(--page-padding);
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+}
+
+.site-title {
+    color: var(--color-text);
+    font-size: 1.25rem;
+    font-weight: 650;
+    letter-spacing: -0.03em;
+}
+
+.main-nav {
+    display: flex;
+    align-items: center;
+    gap: 28px;
+}
+
+.main-nav a {
+    color: var(--color-muted);
+    font-size: 0.95rem;
+}
+
+.main-nav a:hover {
+    color: var(--color-accent);
+}
+
+
+/* =========================================
+   MAIN CONTENT
+========================================= */
+
+main {
+    width: 100%;
+    max-width: var(--content-width);
+    min-height: 65vh;
+    margin: 0 auto;
+    padding: 80px var(--page-padding);
+}
+
+.home-content {
+    max-width: 760px;
+}
+
+.home-content h1 {
+    margin-bottom: 24px;
+}
+
+.home-content p {
+    color: var(--color-muted);
+    font-size: 1.15rem;
+}
+
+
+/* =========================================
+   FOOTER
+========================================= */
+
+.site-footer {
+    background: var(--color-surface);
+    border-top: 1px solid var(--color-border);
+}
+
+.footer-inner {
+    max-width: var(--content-width);
+    margin: 0 auto;
+    padding: 30px var(--page-padding);
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.footer-inner p {
+    margin: 0;
+    color: var(--color-muted);
+    font-size: 0.85rem;
+}
+
+.footer-description {
+    text-align: right;
+}
+
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 650px) {
+
+    .header-inner {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
+    }
+
+    .main-nav {
+        width: 100%;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    main {
+        min-height: 60vh;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    .footer-inner {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+    }
+
+    .footer-description {
+        text-align: left;
+    }
+
+}
+
+
+/* =========================================
+   CONTENT PAGES
+========================================= */
+
+.page-content {
+    max-width: 760px;
+}
+
+.page-header {
+    margin-bottom: 35px;
+}
+
+.page-header h1 {
+    margin: 0;
+}
+
+.page-body h2 {
+    margin-top: 2rem;
+}
+
+.page-body ul {
+    padding-left: 1.5rem;
+}
+
+.page-body li {
+    margin-bottom: 0.4rem;
+}
+
+
+
+/* =========================================
+   HOME - HERO
+========================================= */
+
+.hero {
+    padding: 35px 0 90px;
+    max-width: 780px;
+}
+
+.eyebrow {
+    margin-bottom: 16px;
+    color: var(--color-accent);
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+}
+
+.hero h1 {
+    max-width: 700px;
+    margin: 0 0 24px;
+    letter-spacing: -0.045em;
+}
+
+.hero-description {
+    max-width: 620px;
+    color: var(--color-muted);
+    font-size: 1.2rem;
+}
+
+.hero-links {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 25px;
+    margin-top: 32px;
+}
+
+.button-link {
+    display: inline-block;
+    padding: 11px 22px;
+    color: white;
+    background: var(--color-accent);
+    border-radius: 5px;
+    font-size: 0.95rem;
+}
+
+.button-link:hover {
+    color: white;
+    opacity: 0.85;
+}
+
+.text-link {
+    font-size: 0.95rem;
+}
+
+
+/* =========================================
+   HOME - INTERESTS
+========================================= */
+
+.interests {
+    padding: 65px 0;
+    border-top: 1px solid var(--color-border);
+}
+
+.section-heading {
+    margin-bottom: 32px;
+}
+
+.section-heading h2 {
+    margin: 0;
+}
+
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.interest-card {
+    padding: 26px;
+    background: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: 7px;
+}
+
+.card-number {
+    color: var(--color-accent);
+    font-size: 0.8rem;
+    font-weight: 700;
+}
+
+.interest-card h3 {
+    margin: 18px 0 12px;
+    font-size: 1.15rem;
+}
+
+.interest-card p {
+    margin: 0;
+    color: var(--color-muted);
+    font-size: 0.92rem;
+}
+
+
+/* =========================================
+   HOME - EXPLORE
+========================================= */
+
+.explore {
+    padding: 60px 0 20px;
+    border-top: 1px solid var(--color-border);
+}
+
+.explore-links {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.explore-links a {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    color: var(--color-text);
+    background: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: 5px;
+}
+
+.explore-links a:hover {
+    border-color: var(--color-accent);
+}
+
+
+/* =========================================
+   HOME - RESPONSIVE
+========================================= */
+
+@media (max-width: 750px) {
+
+    .hero {
+        padding-top: 15px;
+        padding-bottom: 60px;
+    }
+
+    .card-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .explore-links {
+        grid-template-columns: 1fr;
+    }
+
+}
